@@ -1,31 +1,31 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: frenone
+repo: status
 
+# What is checked, every 5 minutes, from GitHub's runners.
+# The Telegram and Discord agents have no public endpoint of their own:
+# they depend on the API, so the API check stands for them.
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Dashboard (app.fren.one)
+    url: https://app.fren.one
+  - name: API (api.fren.one)
+    url: https://api.fren.one/health
+  - name: Documentation (docs.fren.one)
+    url: https://docs.fren.one
+  - name: Website (fren.one)
+    url: https://fren.one
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.fren.one
+  logoUrl: https://docs.fren.one/img/f1logo600x600.png
+  name: Fren One Status
+  introTitle: "**Fren One** service status"
+  introMessage: Live availability and response times for the Fren One dashboard, API, documentation and website, checked every 5 minutes. Incidents are posted here as they happen. For what changed in each release, see the [changelog](https://docs.fren.one/changelog).
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: Changelog
+      href: https://docs.fren.one/changelog
+    - title: Docs
+      href: https://docs.fren.one
+    - title: Support
+      href: https://docs.fren.one/docs/overview/support
